@@ -1,0 +1,16 @@
+<div class="login">
+  <div class="container">
+    <div class="login_form">
+        <img src="../../assets/images/logo.png">
+        <form>
+            <input type="email" placeholder="اسم المستخدم" required name="email" [(ngModel)]="email">
+            <i class="fa fa-user"></i>
+            <input type="password" placeholder="كلمة السر" required name="pass" [(ngModel)]="pass">
+            <i class="fa fa-lock"></i>
+            <button type="submit" (click)="login()">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </form>
+    </div>
+  </div>
+</div>

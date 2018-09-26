@@ -1,0 +1,78 @@
+<div class="manage_product">
+    <div class="manage_heading">عرض جميع الاصناف</div>
+  <div class="table_product">
+      <table class="table table-dark table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">رقم المسلسل</th>
+              <th scope="col">الصنف</th>
+              <th scope="col">كود الصنف</th>
+              <th scope="col">السعر</th>
+              <th scope="col">الكمية</th>
+              <th scope="col">الملاحظات</th>
+              <th scope="col">التحكم</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let prod of itemlist">
+              <th>{{prod.$key}}</th>
+              <td>{{prod.productname}}</td>
+              <td>{{prod.productcode}}</td>
+              <td>{{prod.productsalary}}</td>
+              <td>{{prod.productquantity}}</td>
+              <td>{{prod.notes}}</td>
+              <td>
+                <button class="btn-edit" type="button" (click)="editform(prod.$key)" uk-toggle="target: #modal-example">تعديل <i class="fa fa-edit"></i></button>
+                <button type="button" class="btn-delete" (click)="delete(prod.$key)">حذف <i class="fa fa-trash"></i></button>
+              </td>
+<!-- This is the modal -->
+<div id="modal-example" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h4 class="uk-modal-title">تعديل بيانات الصنف</h4>
+        <div id="alertupdate">
+
+        </div>
+        <form>
+            <div>
+              <label>اسم الصنف</label>
+              <input type="text" placeholder="اسم الصنف" name="productname" [(ngModel)]="data.productname"  required ="required">
+            </div>
+  
+            <div>
+                <label>كود الصنف</label>
+                <input type="text" placeholder="كود الصنف" name="productcode" [(ngModel)]="data.productcode" required ="required" required>
+              </div>
+  
+              <div>
+                  <label>سعر الصنف</label>
+                  <input type="text" placeholder="سعر الصنف" name="productsalary" [(ngModel)]="data.productsalary"  required ="required" required>
+              </div>
+    
+              <div>
+                <label>الكمية</label>
+                <input type="text" placeholder="الكمية" name="productquantity" [(ngModel)]="data.productquantity"  required ="required" >
+              </div>
+             <div>
+              <label>الملاحظات</label>
+              <input type="text" placeholder="الملاحظات" name="notes" [(ngModel)]="data.notes"  required ="required">
+           </div>
+          </form>
+  
+
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">الغاء</button>
+            <button class="uk-button uk-button-primary delete" (click)="updateform(prod.$key)" type="button">حفظ</button>
+        </p>
+    </div>
+</div>
+            </tr>
+          </tbody>
+        </table>
+        <!-- This is a button toggling the modal -->
+
+<!-- This is an anchor toggling the modal -->
+
+
+
+  </div>
+</div>

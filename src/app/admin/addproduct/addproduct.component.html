@@ -1,0 +1,34 @@
+<div class="product">
+  <div class="container">
+         <h4>اضافة صنف جديد</h4>
+         <div id="success_add"></div>
+      <div class="product_form">
+        <form>
+          <div>
+            <label>اسم الصنف</label>
+            <input type="text" placeholder="اسم الصنف" required ="required" name="productname" [(ngModel)]="data.productname">
+          </div>
+
+          <div>
+              <label>كود الصنف</label>
+              <input type="text" placeholder="كود الصنف" required ="required" required name="productcode" [(ngModel)]="data.productcode">
+            </div>
+
+            <div>
+                <label>سعر الصنف</label>
+                <input type="text" placeholder="سعر الصنف" required ="required" required name="productsalary" [(ngModel)]="data.productsalary">
+            </div>
+  
+            <div>
+              <label>الكمية</label>
+              <input type="text" placeholder="الكمية" required ="required" name="productquantity" [(ngModel)]="data.productquantity">
+            </div>
+           <div>
+            <label>الملاحظات</label>
+            <input type="text" placeholder="الملاحظات" required ="required" name="notes" [(ngModel)]="data.notes">
+         </div>
+         <button type="button" (click)="insertproduct()" class="insert_product">Add</button>
+        </form>
+      </div>
+  </div>
+</div>

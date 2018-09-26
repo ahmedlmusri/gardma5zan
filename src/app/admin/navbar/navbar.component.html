@@ -1,0 +1,53 @@
+<!-- start header-->
+  <div class="navbar">
+      <div class="container">
+        <nav>
+          <h5>جرد مخازن</h5>
+          <ul>
+            <li><i class="fa fa-angle-right"></i><a href="#"><i class="fa fa-home"></i>الرئيسية</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#"><i class="fa fa-shopping-cart"></i>المبيعات</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#"><i class="fa fa-cart-arrow-down"></i>التوريد</a></li>
+            <li class="list_staff"><i class="fa fa-angle-right"></i><a><i class="fa fa-shopping-basket"></i>الاصناف</a>
+              <ul class="staff">
+                <li><a href="#" routerLink="/admin/manageproduct">ادارة  الاصناف</a></li>
+                <li><a href="#" routerLink="/admin/addproduct">اضافة صنف</a></li>
+                <li><a href="#">عمل تقرير</a></li>
+              </ul>
+            </li>
+            <li><i class="fa fa-angle-right"></i><a href="#"><i class="fa fa-bookmark"></i>المصروفات</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#"><i class="fa fa-flag"></i>التقارير</a></li>
+            <li><i class="fa fa-angle-right"></i><a href="#"><i class="fa fa-cog"></i>الضبط</a></li>
+          </ul>
+
+        </nav>
+
+        <div class="dashboard">
+          <div class="menu">
+            <a>
+                <i class="fa fa-bars"></i>
+            </a>
+
+          </div>
+
+          <div class="admin">
+            <div class="user_info">
+              <div class="user_subinfo">
+                  <img src="../../assets/images/user.png" class="username">
+                  <h5><a href="#" class="username">احمد المصري</a></h5>
+              </div>
+               <div class="sings">
+                 <div class="sing_img">
+                    <img src="../../assets/images/user.png">
+                 </div>
+                  <a (click)="logout()">تسجيل الخروج</a>
+                <a> ملف الشخصي</a>
+               </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+  </div>

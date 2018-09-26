@@ -1,0 +1,6 @@
+@mixin propcss($property,$value,$prefixer:()) {
+    @each $prefix in $prefixer {
+        #{'-' + $prefix + '-' + $property}:$value;
+    }
+    #{$property}:$value;
+}

@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    @include propcss(box-sizing,border-box,webkit moz o ms);
+}
+
+body{
+    direction:rtl;
+    font-family: 'Cairo', sans-serif;
+    position: relative;
+    
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar{
+    .staff{
+        display: none;
+        background-color: #3f4558;
+        width: 242px;
+        margin-right: -14px;
+        margin-bottom: -2px;
+        li:hover{
+            background-color: transparent;
+        }
+        li:hover a{
+            color: #FFF;
+        }
+    }
+    nav{
+        width: 18%;
+        background-color: $main-color;
+        height: 700px;
+        h5{
+            font-size: 20px;
+            padding: 10px 15px;
+            color: #FFF;
+            font-weight: normal;
+            margin-bottom: 10px;
+            border-bottom: 1px solid $seccolor;
+        }
+
+        ul {
+            width: 273px;
+            li{
+                list-style: none;
+                padding: 7px 15px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                .fa-angle-right{
+                    float: left;
+                    color: #b8c7ce;
+                    margin-top: 8px;
+                    font-weight: normal;
+                    font-size: 12px;
+                }
+                a{
+                    color: #5D667E;
+                    text-decoration: none;
+                    width: 100%;
+                    i{
+                        padding-left: 5px;
+                        color: #b8c7ce;
+                    }
+                }
+                &:hover{
+                    background-color: $seccolor;
+                }
+            }
+           
+        }
+    }
+
+    .dashboard{
+        width: 82%;
+        display: flex;
+        flex-direction: row;
+        background-color: #ECF0F5;
+        height: 50px;        
+        .menu{
+            width: 10%;
+            i{
+                font-size: 20px;
+                margin-right: 22px;
+                margin-top: 15px;
+                color: $main-color;
+            }
+        }
+        .admin{
+            width: 90%;
+          
+            .user_info{
+                float: left;
+                .user_subinfo{
+                    cursor: pointer;
+                    height: 51px;
+                    width: 204px;
+                    margin-right: 49px;
+                    padding-top: 0px;
+                    &:hover{
+                        background-color: $main-color;
+                    }
+                    &:hover a{
+                        color: #FFF;
+                    }
+                    img{
+                        width: 50px;
+                        height: 45px;
+                        float: right;
+                    }
+                    h5{
+                        display: inline-block;
+                        margin-left: 40px;
+                        margin-top: 16px;
+                        a{
+                            text-decoration: none;
+                            cursor: pointer;
+                            color: $main-color;
+                        }
+                    }
+                }
+               
+              
+                .sings{
+                    display: none;
+                    position: relative;
+                    left: 0px;
+                    top: -1px;
+                    height: 228px;
+                    width: 253px;
+                    background-color: #ECF0F5;
+                    border-radius: 2px;
+                    padding-top: 0px;
+                    .sing_img{
+                        background-color: #262D47;
+                        height: 161px;
+                        margin-bottom: 17px;
+                        margin-top: 0px;
+                        padding-top: 22px;
+                    
+                    }
+                    
+                img{
+                    width: 86px;
+                    height: 86px;
+                    display: block;
+                    margin-right: 81px;
+                    margin-bottom: 38px;
+                    border: 1px solid #FFF;
+                    border-radius: 50%;
+                    background-color: #FFF;
+                
+                    }
+                    a{
+                        padding: 3px 7px;
+                        background-color: #E7E7E7;
+                        margin-right: 13px;
+                        color: #555;
+                        text-decoration: none;
+                        font-size: 15px;
+                        border: 1px solid #CCC;
+                                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+.dashwidth{
+    width: 100%!important;
+}
+
+.wdnav{
+    display: none;
+}
+
+.staff_active{
+    background-color: transparent!important;
+}

@@ -1,0 +1,78 @@
+.manage_product{
+    .manage_heading{
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 600;
+        border-bottom: 1px solid $main-color;
+        padding: 13px 0px;
+        color: #676A6C;
+    }
+}
+table{
+    width: 1000px;
+    border: 1px solid $main-color;
+    border-radius: 3px;
+    text-align: center;
+    th{
+        color: $seccolor;
+        font-weight: 700;
+    }
+    th,td{
+        border: 1px solid $main-color;
+        border-radius: 1px;
+    }
+
+    tr{
+        .btn-edit{
+            width: 71px;
+            height: 34px;
+            background-color: #28A745;
+            border: 1px solid #28A745;
+            color: #FFF;
+            font-size: 16px;
+            border-radius: 3px;
+            padding: 2px 3px;
+            margin: 4px 7px;
+            cursor: pointer;
+            i{
+                padding: 0px 3px;
+            }
+        }
+        .btn-delete{
+            width: 71px;
+            height: 34px;
+            background-color: #DC3545;
+            border: 1px solid #DC3545;
+            color: #FFF;
+            font-size: 16px;
+            border-radius: 3px;
+            padding: 2px 3px;
+            margin: 4px 7px;
+            cursor: pointer;
+            i{
+                padding: 0px 3px;
+            }
+        }
+    }
+}
+
+.uk-modal-body{
+
+    label,input{
+        display: block;
+    }
+    input{
+        height: 33px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+.aletupdate{
+    height: 40px;
+    background-color: red;
+    color: #FFF;
+    line-height: 40px;
+    padding: 0px 5px;
+    display: block;
+}
